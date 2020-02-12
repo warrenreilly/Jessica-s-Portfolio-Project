@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(94, 75, 94);
+    max-width: 1200px;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li:hover{
+    border-bottom: solid 5px rgb(94, 75, 94);
+}
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+
+}
+
+nav h1 {
+    margin: none;
+    align-self: center;
+    text-align: center;
+}
+
+.top {
+    width: 100%;
+    height: 500px;
+
+    background: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            color-stop(0%, rgba(0, 0, 0, 0)),
+            color-stop(100%, rgb(221, 145, 151))),
+        url('images/flowers.jpg') no-repeat;
+    /* 
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0)0%,
+            rgb(255, 145, 151)100%,
+        ),
+        url("images/flowers.jpg") no-repeat; */
+
+    background-size: 120%;
+    background-position: center;
+    background-repeat: none;
+    }
+
+.top{
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-end;
+   } 
+
+.top h1{
+    font-size: 4.5rem;
+    font-weight: 900;
+    width: 60%;
+    margin: 0;
+    margin-left: 35px;
+    
+  }
+
+.btn{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: inherit;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+    width: 200px;
+}
+
+.btn-lightmauve{
+    background-color: rgb(224, 188, 208);
+    color: rgb(94, 75, 94);
+}
+
+.btn-lightmauve:hover{
+    border: solid 3px rgb(94, 75, 94);
+    transform: translatex(25px);
+    padding: 2px;
+    text-shadow: 2px 2px 5px red;
+}
+
+.btn-magenta{
+    background-color:rgb(94, 75, 94);
+    color:  rgb(224, 188, 208);
+
+}
+
+.btn-magenta{
+    border: solid 3px rgb(175, 136, 136);
+    transform: translatex(25px);
+    padding: 2px;
+}
+
+.top .btn{
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+
+p{
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+
+}
+
+.content{
+    width: 100%;
+    display: flex;
+}
+
+.content img{
+    flex-grow: 1;
+    width: 50%;
+}
+
+.bottom{
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    height: inherit;
+}
+
+.info h1{
+    margin: 0;
+    font-weight: 500;
+    font-size: 4rem;
+
+}
+
+.bg-lightmauve{
+    background-color: rgb(224, 188, 208);
+
+}
+
+.bg-salmon{
+    background-color: rgb(175, 136, 136);
+}
